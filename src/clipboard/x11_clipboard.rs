@@ -59,3 +59,12 @@ impl X11ClipboardContext<Clipboard> {
         ))
     }
 }
+
+impl X11ClipboardContext<Primary> {
+    pub fn new() -> Result<Self> {
+        Ok(X11ClipboardContext(
+            X11Clipboard::new().context("Failed to create primary clipboard")?,
+            PhantomData,
+        ))
+    }
+}

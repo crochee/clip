@@ -1,5 +1,5 @@
 [package]
-name = "clip"
+name = "clipx"
 version = "0.1.0"
 edition = "2021"
 keywords = ["cli", "clipboard", "tools"]
@@ -10,7 +10,7 @@ homepage = "https://github.com/crochee/clip"
 repository = "https://github.com/crochee/clip"
 
 [[bin]]
-name = "clip"
+name = "clipx"
 path = "src/main.rs"
 
 [dependencies]
